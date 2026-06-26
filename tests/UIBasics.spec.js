@@ -19,6 +19,7 @@ test('Page Playwright Test', async ({browser,page}) => {
      await signIn.click();
     console.log(await cardTitles.first().textContent());
     console.log(await cardTitles.nth(1).textContent());
+    //await expect(page.locator("[style*='block']")).toContainText("Incorrect");
 });
 
  test('UI Controls Test', async ({browser,page}) => {   
