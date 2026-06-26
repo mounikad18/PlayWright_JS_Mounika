@@ -7,7 +7,7 @@ test.only ('Client APP Login', async ({browser,page}) => {
     const products = page.locator(".card-body");
     const productName = 'ADIDAS ORIGINAL';
    await page.goto("https://rahulshettyacademy.com/client");
-await userName.fill("ans@gmail.com");
+await userName.fill("anssdds@gmail.com");
 await page.locator("#userPassword").fill("Iamking@000");
 await signIn.click();
 console.log(await page.title());
