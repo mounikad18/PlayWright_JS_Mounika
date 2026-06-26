@@ -1,7 +1,7 @@
 const {test, expect} = require('@playwright/test');
 
 test.only ('Client APP Login', async ({browser,page}) => {
-  
+  //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); kaushik document
     const userName = page.locator("#userEmail");
     const signIn = page.locator("[value='Login']");
     const products = page.locator(".card-body");
