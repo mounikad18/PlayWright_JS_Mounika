@@ -42,6 +42,8 @@ test('Page Playwright Test', async ({browser,page}) => {
     console.log(await page.locator("#terms").isChecked());
     await expect(documentLink).toHaveAttribute("class","blinkingText");
  //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); await
+    //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); mounika document
+
 });
 
   test('Child Window Handling', async ({browser}) => {
