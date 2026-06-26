@@ -57,6 +57,10 @@ test('Page Playwright Test', async ({browser,page}) => {
    const arrayText = text.split("@");
    const domain = arrayText[1].split(" ")[0];  
    //console.log(domain);
+   //await expect(page.locator("[style*='block']")).toContainText("Incorrect");
+   //await expect(page.locator("[style*='block']")).toContainText("Incorrect");
+   //await expect(page.locator("[style*='block']")).toContainText("Incorrect");
+   
    await page.locator("#username").fill(domain);
    console.log(await page.locator("#username").inputValue());
         
