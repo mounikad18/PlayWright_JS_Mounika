@@ -27,4 +27,4 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run UIBasics.spec tests
-        run: npx playwright test tests/UIBasics.spec.ts
+        run: npx playwright test tests/UIBasics.spec.js
