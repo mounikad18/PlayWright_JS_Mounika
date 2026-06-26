@@ -39,6 +39,7 @@ for (let i=0; i<count; ++i) {
       {
         await dropdown.locator("button").nth(i).click();
         break;
+        //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); file
      }
    }
    
