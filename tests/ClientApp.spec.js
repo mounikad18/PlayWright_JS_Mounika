@@ -1,18 +1,14 @@
 const {test, expect} = require('@playwright/test');
 
 test.only ('Client APP Login', async ({browser,page}) => {
-  //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); kaushik document
-    //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); kaushik document
-    //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); kaushik document
-    //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); kaushik document
-    //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); kaushik document
+  
   
     const userName = page.locator("#userEmail");
     const signIn = page.locator("[value='Login']");
     const products = page.locator(".card-body");
     const productName = 'ADIDAS ORIGINAL';
    await page.goto("https://rahulshettyacademy.com/client");
-await userName.fill("ans@gmail.com");
+await userName.fill("anshika@gmail.com");
 await page.locator("#userPassword").fill("Iamking@000");
 await signIn.click();
 console.log(await page.title());
@@ -44,12 +40,7 @@ for (let i=0; i<count; ++i) {
       {
         await dropdown.locator("button").nth(i).click();
         break;
-        //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); file
-          //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); kaushik document
-            //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); kaushik document
-              //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); kaushik document
-                //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); kaushik document
-                  //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); kaushik document
+        
      }
    }
    

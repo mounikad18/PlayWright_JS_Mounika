@@ -13,18 +13,13 @@ test('Page Playwright Test', async ({browser,page}) => {
      await page.locator("#password").fill("Learning@830$3mK2");
      await signIn.click();
      console.log(await page.locator("[style*='block']").textContent());
-     //await expect(page.locator("[style*='block']")).toContainText("Incorrect");
-  //await expect(page.locator("[style*='block']")).toContainText("Incorrect");
-  //await expect(page.locator("[style*='block']")).toContainText("Incorrect");
-  //await expect(page.locator("[style*='block']")).toContainText("Incorrect");
-  //await expect(page.locator("[style*='block']")).toContainText("Incorrect");
   
      await userName.fill("");
      await userName.fill("rahulshettyacademy");
      await signIn.click();
     console.log(await cardTitles.first().textContent());
     console.log(await cardTitles.nth(1).textContent());
-    //removed this libe and added new one
+    
 });
 
  test('UI Controls Test', async ({browser,page}) => {   
@@ -46,8 +41,7 @@ test('Page Playwright Test', async ({browser,page}) => {
     await page.locator("#terms").uncheck();
     console.log(await page.locator("#terms").isChecked());
     await expect(documentLink).toHaveAttribute("class","blinkingText");
- //await expect(page.locator("[style*='block']")).toContainText("Incorrect"); await
-    //removed this on local
+
 
 });
 
