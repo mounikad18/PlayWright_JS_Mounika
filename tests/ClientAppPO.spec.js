@@ -3,7 +3,7 @@ const {POManager} = require('../pageobjects/POManager');
 // JSON to String and then JS Object
 const dataSet = JSON.parse(JSON.stringify(require("../utils/placeOrderTestData.json")));
 
-test ('@pageobjects Client APP Login', async ({browser,page}) => {
+test.only ('@pageobjects Client APP Login', async ({browser,page}) => {
   
   // usig page object model, get methods from LoginPage.js
     

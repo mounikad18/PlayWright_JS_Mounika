@@ -1,5 +1,5 @@
 const {LoginPage} = require('./LoginPage');
-const {DashboardPage} = require('./DashBoardPage');
+const {DashBoardPage} = require('./DashBoardPage');
 const {OrdersHistoryPage} = require('./OrdersHistoryPage');
 const {OrdersReviewPage} = require('./OrdersReviewPage');
 const {CartPage} = require('./CartPage');
@@ -9,7 +9,7 @@ constructor(page)
 {
     this.page = page;
     this.loginPage = new LoginPage(this.page);
-    this.dashboardPage = new DashboardPage(this.page);
+    this.dashboardPage = new DashBoardPage(this.page);
     this.ordersHistoryPage = new OrdersHistoryPage(this.page);
     this.ordersReviewPage = new OrdersReviewPage(this.page);
     this.cartPage = new CartPage(this.page);
