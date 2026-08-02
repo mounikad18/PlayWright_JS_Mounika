@@ -1,6 +1,6 @@
 const {test, expect} = require('@playwright/test');
 
-test ('Client APP Login', async ({browser,page}) => {
+test ('@smoke Client APP Login', async ({browser,page}) => {
   
   
     const userName = page.locator("#userEmail");

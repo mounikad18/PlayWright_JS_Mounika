@@ -1,5 +1,5 @@
 const {test, expect, request} = require('@playwright/test');
-const {APIUtils} = require('./utils/APIUtils');
+const {APIUtils} = require('../utils/APIUtils');
 const loginPayLoad = {userEmail:"anshika@gmail.com",userPassword:"Iamking@000"};
 const orderPayLoad = {orders:[{country:"India",productOrderedId:"6960eae1c941646b7a8b3ed3"}]};
  
@@ -13,8 +13,6 @@ test.beforeAll( async()=>
  
 })
  
- 
-//create order is success
 //create order is success
 test('@API Place the order', async ({page})=>
 { 
