@@ -1,7 +1,7 @@
 const {test, expect} = require('@playwright/test');
 const { text } = require('node:stream/consumers');
 
-test('Page Playwright Test', async ({browser,page}) => {
+test('@smoke Page Playwright Test', async ({browser,page}) => {
   
       const userName = page.locator("#username");
       const signIn = page.locator("#signInBtn");
@@ -22,7 +22,7 @@ test('Page Playwright Test', async ({browser,page}) => {
     
 });
 
- test('UI Controls Test', async ({browser,page}) => {   
+ test('@smoke UI Controls Test', async ({browser,page}) => {   
    
     const userName = page.locator("#username");
     const signIn = page.locator("#signInBtn");
@@ -45,7 +45,7 @@ test('Page Playwright Test', async ({browser,page}) => {
 
 });
 
-  test('Child Window Handling', async ({browser}) => {
+  test('@smoke Child Window Handling', async ({browser}) => {
 
     const context = await browser.newContext();
     const page = await context.newPage();

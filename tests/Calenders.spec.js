@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test' ;
 
-test.only('Calender Validations', async ({page}) => 
+test ('Calender Validations', async ({page}) => 
     {
         const month = "6";
         const year = "2027";
