@@ -1,7 +1,7 @@
 class LoginPage {
     constructor(page) {
         this.page = page;
-        this.userName = page.locator('#userEmail');
+        this.username = page.locator('#userEmail');
         this.password = page.locator('#userPassword');
         this.signInButton = page.locator("[value='Login']");
     }
@@ -13,7 +13,7 @@ class LoginPage {
     }
 
     async validlogin(username, password) {
-        await this.userName.type(username);
+        await this.username.type(username);
         await this.password.type(password);
         await this.signInButton.click();
         await this.page.waitForLoadState('networkidle');
